@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'nfc_demo.dart';
 
 class BasicForm extends StatefulWidget {
   @override
@@ -85,7 +86,12 @@ class _BasicFormState extends State<BasicForm> {
                             ),
                             RaisedButton(
                               color: Colors.blue,
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Nfcdemo()));
+                              },
                               textColor: Colors.white,
                               padding: const EdgeInsets.all(0.0),
                               child: Container(
